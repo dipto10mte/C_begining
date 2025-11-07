@@ -8,8 +8,8 @@ int main()
     scanf("%d",&a);
     x=a;
     y=b;
-    if(a==0) gcd=a;
-    else if(b==0) gcd=b;
+    if(a==0) lcd=a;
+    else if(b==0) lcd=b;
     else
     {
         while(b!=0)
