@@ -6,7 +6,15 @@ int is_prime(int n)
     {
         return 0;
     }
-    for(i=2;i<n;i++)
+    if(n==2);
+    {
+        return 1;
+    }
+    if(n%2==0)
+    {
+        return 0;
+    }
+    for(i=3;i<=n/2;i=i+2)
     {
         if(n%i==0)
         {
@@ -17,7 +25,7 @@ int is_prime(int n)
 }
 int main()
 {
-    int n;
+int n;
     while(1)
     {
         printf("Please enter a number(enter 0 to exit)=");
