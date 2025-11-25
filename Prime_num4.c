@@ -1,20 +1,20 @@
 #include<stdio.h>
 #include<math.h>
-const int size=40;
-int ara[size];
-void print_ara()
+#define size 40
+int ar[size];
+void print_ar()
 {
     int i;
     for(i=2;i<size;i++)
     {
-        printf("%4d",ara[i]);
+        printf("%4d",ar[i]);
     }
     printf("\n");
     for(i=2;i<size;i++)
     {
         printf("----");
     }
-    printf(("\n"))
+    printf(("\n"));
     for(i=2;i<size;i++)
     {
         printf("%4d",i);
@@ -24,21 +24,21 @@ void print_ara()
 void sieve()
 {
     int i,j,root;
-    for(i=2;i<size;i++);
+    for(i=2;i<size;i++)
     {
-        ara[i]=1;
+        ar[i]=1;
     }
     root=sqrt(size);
-    print_ara()
+    print_ar();
     for(i=2;i<=root;i++)
     {
-        if(ara[i]==1)
+        if(ar[i]==1)
         {
             for(j=2;i*j<=size;j++)
             {
-                ara[i*j]=0;
+                ar[i*j]=0;
             }
-            print_ara();
+            print_ar();
         }
     }
 }
@@ -49,11 +49,11 @@ int is_prime(int n)
     {
         return 0;
     }
-    return ara[n];
+    return ar[n];
 }
-int main
+int main()
 {
-    n,m;
+    int n,m;
     sieve();
     while(1)
     {
