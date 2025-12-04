@@ -3,15 +3,18 @@
 #include<math.h>
 int main()
 {
-    int a,b,i,binary[65];
+    int a,b,i,j,binary[10000];
     printf("Enter a decimal number: ");
     scanf("%d",&a);
     for(i=0;a>0;i++)
     {
-        b=a%2;
+        binary[i]=a%2;
         a=a/2;
-        binary[i]=b;
     }
-    printf("Binary value is %s",binary[65]);
+    printf("Binary value is: ");
+    for(j=i-1;j>=0;j--)
+    {
+        printf("%d", binary[j]);
+    }
     return 0;
 }
