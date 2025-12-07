@@ -8,8 +8,7 @@ int main()
 
     while(1)
     {
-        scanf(" %c", &c);  // Added space before %c to skip whitespace
-
+        scanf(" %c", &c);
         if(c == 'S')
         {
             break;
