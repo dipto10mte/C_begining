@@ -43,6 +43,5 @@ int main()
         }
         printf("Final position: (%d,%d)\n", x, y);
     }
-    printf("Final position: (%d,%d)\n", x, y);
     return 0;
 }
