@@ -13,7 +13,7 @@ int main()
     fscanf(fp_in,"%d",&num2);
     sum=num1+num2;
     printf("%d %d %d\n",num1,num2,sum);
-    fprintf(fp_out,"%d",sum);
+    fprintf(fp_out,"%d\n",sum);
 
     fclose(fp_in);
     fclose(fp_out);
