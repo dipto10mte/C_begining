@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 typedef struct{
     char first[20];
     char last[20];
@@ -36,8 +36,8 @@ int main()
         printf("\n");
     }
     for(i=0;i<n;i++)
-        claculate_grade(student[i],marks[i]);
-    printf("OOutput: \n\n");
+        calculate_grade(&student[i],marks[i]);
+    printf("Output: \n\n");
     for(i=0;i<n;i++){
         printf("ID: %d\n",student[i].id);
         printf("Name: %s %s\n",student[i].name.first,student[i].name.last);
