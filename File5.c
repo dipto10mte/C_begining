@@ -23,7 +23,8 @@ int main()
         fputc(ch,fp_out);
     }
 
-
+    fclose(fp_in);
+    fclose(fp_out);
 
     return 0;
 }
