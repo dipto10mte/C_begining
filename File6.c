@@ -19,7 +19,7 @@ int main()
     ch=fgetc(fp);
     printf("%c\n",(char)ch);
 
-
+    fclose(fp);
 
     return 0;
 }
