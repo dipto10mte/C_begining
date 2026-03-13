@@ -2,11 +2,7 @@
 #include<stdlib.h>
 int main()
 {
-    FILE *fp=fopen("int.txt","r");
-    if(fp==NULL){
-        perror("Can't open file");
-        return EXIT_FAILURE;
-    }
+
 
     int ch;
 
