@@ -17,7 +17,7 @@ int main()
 
     fseek(fp,0,0);
     ch=fgetc(fp);
-
+    printf("%c\n",(char)ch);
 
     fclose(fp);
 
