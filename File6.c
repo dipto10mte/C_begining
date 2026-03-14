@@ -16,6 +16,8 @@ int main()
     printf("%c\n",(char)ch);
 
     fseek(fp,0,0);
+    ch=fgetc(fp);
+
 
     fclose(fp);
 
