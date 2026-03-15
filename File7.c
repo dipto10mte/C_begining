@@ -12,7 +12,10 @@ int main()
 
     fseek(fp_in,0,SEEK_END);
 
+    printf("File Size: %ld bytes\n",ftell(fp_in));
+    printf("File Size(Kilobyte): %ld\n",ftell(fp_in)/1024);
 
+    fclose(fp_in);
 
     return 0;
 }
