@@ -10,4 +10,8 @@ void plus_ten2(int *a)
     *a=(*a)+10;
 }
 
+int main()
+{
 
+    return 0;
+}
