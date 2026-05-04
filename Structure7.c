@@ -29,3 +29,33 @@ void calculate_grade(studenttype *s, int mark)
 
 }
 
+int main()
+{
+    studenttype student[5];
+    int i,n=5;
+    int marks[]={72,82,60,20,50};
+
+    for(i=0;i<n;i++){
+        printf("Enter the id of the student %d: ",i+1);
+        scanf("%d",&student[i].id);
+        printf("Enter the first name of the student %d: ",i+1);
+        scanf("%s",&student[i].name.first);
+        printf("Enter the last name of the student %d: ",i+1);
+        scanf("%s",&student[i].name.last);
+        strcpy(student[i].grade,"");
+        printf("\n");
+    }
+
+    for(i=0;i<n;i++)
+        calculate_grade(&student[i],marks[i]);
+
+    printf("Output: \n\n");
+
+    for(i=0;i<n;i++){
+        printf("ID: %d\n",student[i].id);
+        printf("Name: %s %s\n",student[i].name.first,student[i].name.last);
+        printf("Grade: %s\n",student[i].grade);
+    }
+
+    return 0;
+}
