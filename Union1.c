@@ -14,6 +14,13 @@ union u{
 
 int main()
 {
+    nt struct_size, union_size;
+
+    struct_size=sizeof(sv);
+    union_size=sizeof(uv);
+
+    printf("Structure variable took %d bytes\n",struct_size);
+    printf("Union variable took %d bytes\n",union_size);
 
     return 0;
 }
