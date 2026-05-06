@@ -14,7 +14,7 @@ union u{
 
 int main()
 {
-    nt struct_size, union_size;
+    int struct_size, union_size;
 
     struct_size=sizeof(sv);
     union_size=sizeof(uv);
