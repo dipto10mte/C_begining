@@ -19,7 +19,7 @@ struct s1{
     printf("double size : %lu bytes\n",sizeof(double));
 
     printf("s1 size : %lu bytes\n",sizeof(struct s1));
-    printf("s2 size : %lu bytes\n",sizeof(struct s2));
+    printf("s2 size : %lu bytes\n",sizeof(struct s2))
 
     return 0;
  }
