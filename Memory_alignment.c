@@ -6,6 +6,12 @@ struct s1{
     char c;
  };
 
+ struct s2{
+    char c;
+    int n;
+    double d;
+ };
+
  int main()
  {
 
