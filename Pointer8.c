@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-in main()
+
+int main()
 {
     int *marks;
     int i,n;
@@ -10,5 +11,12 @@ in main()
     //now allocate memory
     marks=int(*)malloc(sizeof(int)*n);
 
+    printf("Enter the marks of each student: \n");
+    for(i=0;i<n;i++)
+        scanf("%d",&marks[i]);
+    printf("Now here you can see the values: \n");
+    //now print the marks array
+    fot(i=0;i<n;i++)
+        printf("%d\n",marks[i]);
     return 0;
 }
